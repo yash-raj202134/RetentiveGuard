@@ -2,6 +2,7 @@
 # RetentiveGuard
 
 **RetentiveGuard** is a machine learning model that can accurately detect whether an essay was written by a student or a Large Language Model (LLM). This innovative project leverages natural language processing and deep learning techniques to differentiate between human-written and LLM-generated essays.
+<br>
 ![](image.jpeg)
 ## Features
 
