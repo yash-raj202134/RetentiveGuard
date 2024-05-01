@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: retentiveGuard
+Version: 0.0.1
+Author: Yash
+Author-email: yashraj3376@gmail.com
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: keras
+Requires-Dist: tensorflow
+Requires-Dist: torch

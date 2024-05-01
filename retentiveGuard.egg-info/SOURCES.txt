@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+retentiveGuard.egg-info/PKG-INFO
+retentiveGuard.egg-info/SOURCES.txt
+retentiveGuard.egg-info/dependency_links.txt
+retentiveGuard.egg-info/requires.txt
+retentiveGuard.egg-info/top_level.txt

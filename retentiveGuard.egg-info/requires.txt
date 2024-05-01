@@ -5,5 +5,3 @@ seaborn
 keras
 tensorflow
 torch
-
--e .
