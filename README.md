@@ -23,13 +23,13 @@ The project uses a unique dataset composed of essays written in response to one 
 
 1. **Clone the Repository**:
     ```bash
-    git clone [YOUR_REPOSITORY_URL]
+    git clone https://github.com/yash-raj202134/RetentiveGuard.git
     ```
 
 2. **Install Dependencies**:
     - Use Conda to create and activate an environment:
         ```bash
-        conda create -n retentiveguard python=3.8 -y
+        conda create -n retentiveguard python=3.10 -y
         conda activate retentiveguard
         ```
     - Install project requirements:
@@ -41,21 +41,6 @@ The project uses a unique dataset composed of essays written in response to one 
     - Ensure the training and test sets are available in the specified directory.
     - The directory structure and file format should follow the guidelines provided in the project documentation.
 
-4. **Train the Model**:
-    - Run the training script:
-        ```bash
-        python train.py
-        ```
-
-5. **Evaluate the Model**:
-    - Test the model using the hidden test set:
-        ```bash
-        python evaluate.py
-        ```
-
-6. **Use RetentiveGuard**:
-    - Apply the model to new essays to determine whether they were written by a student or LLM.
-
 ## Contributing
 
 We welcome contributions from the community! If you would like to contribute, please follow these steps:
@@ -66,12 +51,12 @@ We welcome contributions from the community! If you would like to contribute, pl
 
 ## License
 
-This project is licensed under the [LICENSE_NAME] license.
+This project is licensed under MIT license.
 
 ## Author
 
-[YOUR NAME]  
-[YOUR EMAIL]
+[Yash Raj]  
+[yashraj3376@gmail.com]
 
 ## Acknowledgments
 
