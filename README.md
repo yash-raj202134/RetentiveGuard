@@ -58,8 +58,3 @@ This project is licensed under MIT license.
 [Yash Raj]  
 [yashraj3376@gmail.com]
 
-## Acknowledgments
-
-- Thanks to [LIST ANY COLLABORATORS] for their support and contributions to this project.
-- [ANY OTHER THANKS OR REFERENCES]
-
