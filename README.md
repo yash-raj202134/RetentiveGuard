@@ -19,6 +19,17 @@ The project uses a unique dataset composed of essays written in response to one 
 - **Training Set**: Composed mainly of student-written essays with a few generated essays.
 - **Test Set**: A hidden set of essays used to evaluate model performance.
 
+
+## Methodology:
+Steps:
+-**1** Data Aquisition
+-**2** Preprocessing Data
+-**3** Model Configuration
+-**4** Model Training
+-**5** Model Inference
+-**6** Post Inference Processing
+-**7** Output
+
 ## How to Use RetentiveGuard
 
 1. **Clone the Repository**:
