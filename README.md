@@ -21,7 +21,7 @@ The project uses a unique dataset composed of essays written in response to one 
 
 
 ## Methodology:
-Steps:
+# Steps:
 -**1** Data Aquisition.
 -**2** Preprocessing Data.
 -**3** Model Configuration.

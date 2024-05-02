@@ -1,0 +1,62 @@
+artifacts_root: artifacts
+
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  datasets:
+    - source_URL: "llm-detect-ai-generated-text"
+      type: "competition"
+      local_data_file: artifacts/data_ingestion/llm-detect-ai-generated-text.zip
+      unzip_dir: artifacts/data_ingestion/data1
+    - source_URL: "radek1/llm-generated-essays"
+      type: "dataset"
+      local_data_file: artifacts/data_ingestion/llm-generated-essays.zip
+      unzip_dir: artifacts/data_ingestion/data2
+    - source_URL: "alejopaullier/argugpt"
+      type: "dataset"
+      local_data_file: artifacts/data_ingestion/argugpt.zip
+      unzip_dir: artifacts/data_ingestion/data3
+    - source_URL: "alejopaullier/daigt-external-dataset"
+      type: "dataset"
+      local_data_file: artifacts/data_ingestion/daigt-external-dataset.zip
+      unzip_dir: artifacts/data_ingestion/data4
+    - source_URL: "nbroad/daigt-data-llama-70b-and-falcon180b"
+      type: "dataset"
+      local_data_file: artifacts/data_ingestion/daigt-data-llama-70b-and-falcon180b.zip
+      unzip_dir: artifacts/data_ingestion/data5
+    - source_URL: "thedrcat/daigt-proper-train-dataset"
+      type: "dataset"
+      local_data_file: artifacts/data_ingestion/daigt-proper-train-dataset.zip
+      unzip_dir: artifacts/data_ingestion/data6
+    - source_URL: "thedrcat/daigt-v2-train-dataset"
+      type: "dataset"
+      local_data_file: artifacts/data_ingestion/daigt-v2-train-dataset.zip
+      unzip_dir: artifacts/data_ingestion/data7
+    - source_URL: "darraghdog/hello-claude-1000-essays-from-anthropic"
+      type: "dataset"
+      local_data_file: artifacts/data_ingestion/hello-claude-1000-essays-from-anthropic.zip
+      unzip_dir: artifacts/data_ingestion/data8
+    - source_URL: "kingki19/llm-generated-essay-using-palm-from-google-gen-ai"
+      type: "dataset"
+      local_data_file: artifacts/data_ingestion/llm-generated-essay-using-palm-from-google-gen-ai.zip
+      unzip_dir: artifacts/data_ingestion/data9
+    - source_URL: "carlmcbrideellis/llm-7-prompt-training-dataset"
+      type: "dataset"
+      local_data_file: artifacts/data_ingestion/llm-7-prompt-training-dataset.zip
+      unzip_dir: artifacts/data_ingestion/data10
+    - source_URL: "nbroad/persaude-corpus-2"
+      type: "dataset"
+      local_data_file: artifacts/data_ingestion/persaude-corpus-2.zip
+      unzip_dir: artifacts/data_ingestion/data11
+
+
+# prepare_base_model:
+#   root_dir: artifacts/prepare_base_model
+#   base_model_path: artifacts/prepare_base_model/base_model.h5
+#   updated_base_model_path: artifacts/prepare_base_model/base_model_updated.h5
+
+
+
+
+# training:
+#   root_dir: artifacts/training
+#   trained_model_path: artifacts/training/model.h5
