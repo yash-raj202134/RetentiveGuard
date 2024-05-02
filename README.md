@@ -22,13 +22,13 @@ The project uses a unique dataset composed of essays written in response to one 
 
 ## Methodology:
 Steps:
--**1** Data Aquisition
--**2** Preprocessing Data
--**3** Model Configuration
--**4** Model Training
--**5** Model Inference
--**6** Post Inference Processing
--**7** Output
+-**1** Data Aquisition.
+-**2** Preprocessing Data.
+-**3** Model Configuration.
+-**4** Model Training.
+-**5** Model Inference.
+-**6** Post Inference Processing.
+-**7** Output.
 
 ## How to Use RetentiveGuard
 
