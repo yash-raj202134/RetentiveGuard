@@ -5,7 +5,6 @@ from src.retentiveGuard import logger
 from pathlib import Path
 
 # Import necessary entities and utilities from your project
-from src.retentiveGuard.utils.common import create_directories
 from src.retentiveGuard.entity.config_entity import DataIngestionConfig
 
 # Import Kaggle API

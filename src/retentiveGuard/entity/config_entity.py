@@ -18,3 +18,8 @@ class DataValidationConfig:
     root_dir:Path
     STATUS_FILE: str
     ALL_REQUIRED_FOLDERS: List[Path] =  field(default_factory=list)
+
+
+@dataclass
+class DataTransformationConfig:
+    root_dir:Path

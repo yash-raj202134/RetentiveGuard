@@ -66,6 +66,11 @@ data_validation:
                     ]
 
 
+data_transformation:
+  root_dir: artifacts/data_transformation
+
+
+
 # prepare_base_model:
 #   root_dir: artifacts/prepare_base_model
 #   base_model_path: artifacts/prepare_base_model/base_model.h5
