@@ -1,6 +1,6 @@
 import os 
 from pandas import read_csv ,concat
-
+import json
 from tensorflow.keras.layers import TextVectorization
 import tensorflow as tf
 from src.retentiveGuard import logger
@@ -87,7 +87,14 @@ class DataTransformation:
 
             tokenizer.adapt(train_dataset.text)
 
-            tf.keras.models.save_model(tokenizer,os.path.join(self.config.root_dir, "tokenizer"))
+            tokenizer_config = tokenizer.get_config()
+         
+            tokenizer_path = os.path.join(self.config.root_dir, "tokenizer_config.json")
+
+            with open(tokenizer_path, 'w') as config_file:
+                json.dump(tokenizer_config, config_file)
+
+            # tf.keras.models.save_model(tokenizer,os.path.join(self.config.root_dir, "tokenizer.keras"))
             logger.info("Sucessfully saved the token")
 
         except Exception as e:
