@@ -4,11 +4,8 @@ from typing import List
 
 # Replace cnnClassifier imports with appropriate imports from your project
 from src.retentiveGuard.utils.common import read_yaml, create_directories
-from src.retentiveGuard.entity.config_entity import DataIngestionConfig
+from src.retentiveGuard.entity.config_entity import DataIngestionConfig ,DataValidationConfig
 
-# Define constants for configuration file paths
-CONFIG_FILE_PATH = Path("config/config.yaml")  # Path to your config.yaml file
-PARAMS_FILE_PATH = Path("params.yaml")  # Path to your params.yaml file (if used)
 
 class ConfigurationManager:
     def __init__(self, config_filepath:Path, params_filepath:Path):
@@ -53,3 +50,18 @@ class ConfigurationManager:
             data_ingestion_configs.append(data_ingestion_config)
 
         return data_ingestion_configs
+    
+
+    def get_data_validation_config(self)->DataValidationConfig:
+        config = self.config.data_validation
+
+        create_directories([config.root_dir])
+
+        data_validation_config = DataValidationConfig(
+            root_dir = config.root_dir,
+            STATUS_FILE = config.STATUS_FILE,
+            ALL_REQUIRED_FOLDERS = config.ALL_REQUIRED_FOLDERS,
+
+        )
+
+        return data_validation_config

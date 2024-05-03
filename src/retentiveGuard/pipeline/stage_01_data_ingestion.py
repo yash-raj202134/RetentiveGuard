@@ -1,6 +1,8 @@
 
 from src.retentiveGuard.config.configuration import ConfigurationManager
 from src.retentiveGuard.components.data_ingestion import DataIngestion
+
+from src.retentiveGuard.constants import CONFIG_FILE_PATH,PARAMS_FILE_PATH
 from src.retentiveGuard import logger
 
 STAGE_NAME = "Data Ingestion Stage"
@@ -10,7 +12,7 @@ class DataIngestionPipeline:
         """
         Initialize the DataIngestionPipeline.
         """
-        self.config_manager = ConfigurationManager(config_filepath='config/config.yaml',params_filepath='params.yaml')
+        self.config_manager = ConfigurationManager(config_filepath=CONFIG_FILE_PATH,params_filepath=PARAMS_FILE_PATH)
 
 
 

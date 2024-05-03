@@ -39,32 +39,6 @@ class DataIngestion:
         logger.info(f"Downloaded data from {source_url} into {local_file_path}")
 
 
-
-        # # Iterate through each dataset in the configuration
-        # for dataset_config in self.config.datasets:
-        #     source_url = dataset_config.source_URL
-        #     local_file_path = dataset_config.local_data_file
-        #     unzip_dir = dataset_config.unzip_dir
-
-        #     # Create necessary directories for the local data file and unzip directory
-        #     create_directories([local_file_path.parent, unzip_dir])
-
-        #     try:
-        #         # Log the start of the download
-        #         logger.info(f"Downloading data from {source_url} into {local_file_path}.")
-                
-        #         # Download the dataset using the Kaggle API
-        #         if dataset_config.type == "competition":
-        #             self.kaggle_api.competitions_download_files(source_url, path=str(local_file_path))
-        #         else:
-        #             self.kaggle_api.dataset_download_files(source_url, path=str(local_file_path))
-
-        #         logger.info(f"Downloaded data from {source_url} into {local_file_path}.")
-                
-        #     except Exception as e:
-        #         # Log the error if the download fails
-        #         logger.error(f"Failed to download data from {source_url}: {e}")
-        #         raise e
     
     def extract_datasets(self):
         """
@@ -91,25 +65,6 @@ class DataIngestion:
 
 
 
-        # # Iterate through each dataset in the configuration
-        # for dataset_config in self.config.datasets:
-        #     local_file_path = dataset_config.local_data_file
-        #     unzip_dir = dataset_config.unzip_dir
-
-        #     try:
-        #         # Log the start of the extraction
-        #         logger.info(f"Extracting data from {local_file_path} to {unzip_dir}.")
-                
-        #         # Extract the ZIP file into the unzip directory
-        #         with zipfile.ZipFile(local_file_path, 'r') as zip_ref:
-        #             zip_ref.extractall(unzip_dir)
-                
-        #         logger.info(f"Extracted data from {local_file_path} to {unzip_dir}.")
-                
-        #     except Exception as e:
-        #         # Log the error if the extraction fails
-        #         logger.error(f"Failed to extract data from {local_file_path}: {e}")
-        #         raise e
     
     # def run_data_ingestion(self):
     #     """

@@ -49,6 +49,21 @@ data_ingestion:
       unzip_dir: artifacts/data_ingestion/data11
 
 
+data_validation:
+  root_dir: artifacts/data_validation
+  STATUS_FILE: artifacts/data_validation/status.txt
+  ALL_REQUIRED_FOLDERS: ["artifacts/data_ingestion/data1",
+                          "artifacts/data_ingestion/data2",
+                          "artifacts/data_ingestion/data3",
+                          "artifacts/data_ingestion/data4",
+                          "artifacts/data_ingestion/data5",
+                          "artifacts/data_ingestion/data6",
+                          "artifacts/data_ingestion/data7",
+                          "artifacts/data_ingestion/data8",
+                          "artifacts/data_ingestion/data9",
+                          "artifacts/data_ingestion/data10",
+                          "artifacts/data_ingestion/data11"
+                    ]
 
 
 # prepare_base_model:
