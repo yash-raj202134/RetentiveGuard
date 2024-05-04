@@ -70,6 +70,12 @@ data_transformation:
   root_dir: artifacts/data_transformation
 
 
+base_model_configuration:
+  root_dir: artifacts/model_configuration
+  base_model_path: artifacts/model_configuration/base_model.h5
+  tokenizer_path: artifacts/data_transformation/tokenizer_config.json
+
+
 
 # prepare_base_model:
 #   root_dir: artifacts/prepare_base_model

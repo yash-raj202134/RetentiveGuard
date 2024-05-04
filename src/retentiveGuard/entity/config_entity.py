@@ -23,3 +23,10 @@ class DataValidationConfig:
 @dataclass
 class DataTransformationConfig:
     root_dir:Path
+
+
+@dataclass
+class BaseModelConfig:
+    root_dir:Path
+    base_model_path: str
+    tokenizer_path: str

@@ -4,7 +4,10 @@ from typing import List
 
 # Replace cnnClassifier imports with appropriate imports from your project
 from src.retentiveGuard.utils.common import read_yaml, create_directories
-from src.retentiveGuard.entity.config_entity import DataIngestionConfig ,DataValidationConfig ,DataTransformationConfig
+from src.retentiveGuard.entity.config_entity import (DataIngestionConfig ,
+                                                     DataValidationConfig ,
+                                                     DataTransformationConfig,
+                                                     BaseModelConfig)
 
 
 class ConfigurationManager:
@@ -78,4 +81,19 @@ class ConfigurationManager:
         )
 
         return data_transformation_config
+        
+    
+    def get_model_configuration_config(self)->BaseModelConfig:
+        config = self.config.base_model_configuration
+
+        create_directories([config.root_dir])
+
+        base_model_configuration_config = BaseModelConfig(
+            root_dir=config.root_dir,
+            base_model_path=config.base_model_path,
+            tokenizer_path=config.tokenizer_path
+        )
+
+        return base_model_configuration_config
+    
     
