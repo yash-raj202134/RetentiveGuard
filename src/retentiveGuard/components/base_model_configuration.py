@@ -1,5 +1,4 @@
-import os 
-from pandas import read_csv ,concat
+
 import json
 from tensorflow.keras.layers import TextVectorization
 import tensorflow as tf
@@ -7,7 +6,7 @@ from src.retentiveGuard import logger
 
 
 from tensorflow.keras import Model, Sequential
-from tensorflow.keras.layers import Input, Embedding, Dense, Flatten, Softmax, Dropout
+from tensorflow.keras.layers import Input, Embedding, Dense, Flatten, Dropout
 from itertools import repeat
 
 

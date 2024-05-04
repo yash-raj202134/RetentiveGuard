@@ -35,13 +35,10 @@
 
 import tensorflow as tf
 from tensorflow.keras import Sequential
-from tensorflow.keras.layers import Layer, LayerNormalization, GroupNormalization, Dense, SimpleRNNCell, RNN, LSTM, Bidirectional, LSTMCell
+from tensorflow.keras.layers import Layer, LayerNormalization, GroupNormalization, Dense, RNN, LSTMSimpleRNN, GRU
 import torch
 from itertools import repeat
 
-import tensorflow as tf
-from tensorflow.keras.layers import Layer, LayerNormalization, Dense, SimpleRNNCell, RNN, LSTM, Bidirectional, LSTMCell
-from tensorflow.keras.layers import SimpleRNN, GRU, LSTM
 
 
 class RecurrentRetention(GRU):
