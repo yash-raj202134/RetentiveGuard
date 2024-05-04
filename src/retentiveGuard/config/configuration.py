@@ -7,7 +7,8 @@ from src.retentiveGuard.utils.common import read_yaml, create_directories
 from src.retentiveGuard.entity.config_entity import (DataIngestionConfig ,
                                                      DataValidationConfig ,
                                                      DataTransformationConfig,
-                                                     BaseModelConfig)
+                                                     BaseModelConfig,
+                                                     ModelTrainerConfig)
 
 
 class ConfigurationManager:
@@ -95,5 +96,25 @@ class ConfigurationManager:
         )
 
         return base_model_configuration_config
+    
+    def get_model_trainer_config(self)->ModelTrainerConfig:
+        config = self.config.model_trainer
+        params = self.params.TrainingArguments
+
+        create_directories([config.root_dir])
+        model_training_config = ModelTrainerConfig(
+            root_dir=config.root_dir,
+            train_data_path=config.train_data_path,
+            tokenizer_path=config.tokenizer_path,
+            base_model_path=config.base_model_path,
+            trained_model_path=config.trained_model_path,
+            num_train_epochs = params.num_train_epochs,
+            train_batch_size = params.train_batch_size,
+
+        )
+
+        return model_training_config
+
+
     
     

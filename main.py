@@ -4,6 +4,7 @@ from src.retentiveGuard.pipeline.stage_01_data_ingestion import DataIngestionPip
 from src.retentiveGuard.pipeline.stage_02_data_validation import DataValidationPipeline
 from src.retentiveGuard.pipeline.stage_03_data_transformation import DataTransformationPipeline
 from src.retentiveGuard.pipeline.stage_04_base_model_configuration import BasemodelConfigurationPipeline
+from src.retentiveGuard.pipeline.stage_05_model_trainer import ModelTrainerPipeline
 
 STAGE_NAME = "Data ingestion stage"
 try:
@@ -48,6 +49,18 @@ try:
     pipeline.main()
     logger.info(f">>>>>> {STAGE_NAME} completed <<<<<<\n\nx==========x")
 
+except Exception as e:
+    logger.exception(e)
+    raise e
+
+
+STAGE_NAME = "Model Training stage"
+
+try:
+    logger.info(f">>>>>> {STAGE_NAME} started <<<<<<")
+    pipeline = ModelTrainerPipeline()
+    pipeline.main()
+    logger.info(f">>>>>> {STAGE_NAME} completed <<<<<<\n\nx==========x")
 except Exception as e:
     logger.exception(e)
     raise e
