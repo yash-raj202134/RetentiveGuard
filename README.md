@@ -65,7 +65,7 @@ We welcome contributions from the community! If you would like to contribute, pl
 This project is licensed under MIT license.
 
 ## Author
-
+Feel free to contact :
 [Yash Raj]  
 [yashraj3376@gmail.com]
 
