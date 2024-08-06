@@ -88,6 +88,10 @@ The development of RetentiveGuard is an ongoing process, with future enhancement
 - **Scikit-learn**: Used for model evaluation and performance metrics.
 - **Jupyter Notebooks**: For exploratory data analysis and experimentation.
 
+## Conclusion
+
+RetentiveGuard represents a significant advancement in ensuring the authenticity of written content in an era where AI-generated text is increasingly prevalent. By combining cutting-edge NLP techniques with rigorous training and evaluation processes, RetentiveGuard provides a reliable and effective solution for distinguishing between human and AI-generated essays.
+
 ## Contributing
 
 We welcome contributions from the community! If you would like to contribute, please follow these steps:
