@@ -4,7 +4,12 @@
 
 <br><br><br>
 ![](image.jpeg)
+## Objectives
+The primary goal of RetentiveGuard is to enhance academic integrity by providing educators and institutions with a tool to verify the originality of student essays. The system aims to:
 
+- Detect Authorship: Accurately determine whether an essay was written by a student or an LLM.
+- Enhance Fairness: Ensure that all students are evaluated based on their own work, promoting fairness in academic assessment.
+- Support Educators: Provide teachers and professors with a reliable tool to help in the grading process and reduce instances of academic dishonesty.
 ## Features
 
 - **Essay Prompt Analysis**: Detects essays written in response to specific prompts, understanding their content and context.
@@ -67,6 +72,13 @@ Follow these steps to set up and use the RetentiveGuard model:
 5. **Evaluate Results**:
     - Review the output and analyze the model's performance.
 
+## Future Directions
+The development of RetentiveGuard is an ongoing process, with future enhancements aimed at:
+
+- Improving Accuracy: Continuously refining the model to improve classification accuracy and robustness.
+- Expanding Dataset: Incorporating more diverse prompts and essays to enhance the model's generalization capabilities.
+- User Feedback: Incorporating feedback from educators and users to improve usability and functionality.
+  
 ## Technologies Used
 
 - **Python**: The primary programming language for the project.
